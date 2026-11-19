@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Report | Mashinani Link</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                Mashinani<span>Link</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="report.html">Report Issue</a></li>
+                <li><a href="track.html">Track Report</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <a href="report.html" class="nav-button">Get Started</a>
+        </nav>
+    </header>
+
+    <main class="track-section">
+
+        <div class="track-heading">
+            <p>STAY UPDATED</p>
+            <h1>Track Your Report</h1>
+            <span>
+                Enter your report reference number to check the progress
+                of an issue you submitted.
+            </span>
+        </div>
+
+        <div class="track-container">
+
+            <div class="track-icon">01</div>
+
+            <h2>Check Report Status</h2>
+
+            <p>
+                Enter the unique reference number given when
+                your report was submitted.
+            </p>
+
+            <form id="trackForm">
+                <div class="form-group">
+                    <label for="reportId">Report Reference Number</label>
+
+                    <input
+                        type="text"
+                        id="reportId"
+                        placeholder="e.g. ML-2026-001"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Track Report
+                </button>
+            </form>
+
+            <div id="trackResult" class="track-result" hidden></div>
+
+        </div>
+
+        <div class="track-help">
+            <p>Don't have a reference number?</p>
+            <a href="report.html">Submit a new report</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mashinani Link. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

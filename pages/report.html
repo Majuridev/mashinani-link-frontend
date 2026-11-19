@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue | Mashinani Link</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                Mashinani<span>Link</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="report.html">Report Issue</a></li>
+                <li><a href="track.html">Track Report</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <a href="report.html" class="nav-button">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Report Section -->
+    <main class="report-section">
+
+        <div class="report-heading">
+            <p>MAKE YOUR COMMUNITY BETTER</p>
+            <h1>Report an Issue</h1>
+            <span>
+                Help us identify problems in your community.
+                Submit a report and let the responsible team know.
+            </span>
+        </div>
+
+        <div class="report-container">
+
+            <form id="reportForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Issue Category</label>
+                    <select id="category" required>
+                        <option value="">Select an issue category</option>
+                        <option value="Roads">Roads</option>
+                        <option value="Water">Water Supply</option>
+                        <option value="Drainage">Drainage</option>
+                        <option value="Street Lighting">Street Lighting</option>
+                        <option value="Waste Management">Waste Management</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Issue Location</label>
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter the location of the issue"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Issue Description</label>
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe the issue you want to report..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload Photo (Optional)</label>
+                    <input
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                    >
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mashinani Link. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

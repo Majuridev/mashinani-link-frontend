@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Mashinani Link</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                Mashinani<span>Link</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="report.html">Report Issue</a></li>
+                <li><a href="track.html">Track Report</a></li>
+                <li><a href="admin.html">Dashboard</a></li>
+            </ul>
+
+            <a href="login.html" class="nav-button">Logout</a>
+        </nav>
+    </header>
+
+    <main class="admin-section">
+
+        <!-- Dashboard Heading -->
+        <div class="admin-heading">
+            <div>
+                <p>ADMINISTRATION</p>
+                <h1>Dashboard Overview</h1>
+                <span>Monitor and manage community reports.</span>
+            </div>
+        </div>
+
+        <!-- Dashboard Statistics -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <p>Total Reports</p>
+                <h2 id="totalReports">0</h2>
+                <span>All submitted reports</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Submitted</p>
+                <h2 id="submittedReports">0</h2>
+                <span>Awaiting review</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Under Review</p>
+                <h2 id="reviewReports">0</h2>
+                <span>Currently being reviewed</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Resolved</p>
+                <h2 id="resolvedReports">0</h2>
+                <span>Completed reports</span>
+            </div>
+
+        </section>
+
+        <!-- Reports Table -->
+        <section class="admin-reports">
+
+            <div class="reports-heading">
+                <div>
+                    <h2>Community Reports</h2>
+                    <p>View and manage submitted community issues.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report ID</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Resident</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reportsTable">
+                        <tr>
+                            <td colspan="6">No reports available yet.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mashinani Link. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
